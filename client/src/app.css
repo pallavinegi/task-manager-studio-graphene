@@ -1,0 +1,162 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #121212;
+  color: #ffffff;
+  margin: 0;
+  padding: 20px;
+}
+
+.container {
+  max-width: 800px;
+  margin: auto;
+}
+
+h1 {
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 40px;
+}
+
+h2 {
+  color: #ffffff;
+}
+   
+.task-card {
+  margin-bottom: 25px;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  margin-top: 5px;
+  background: #1e1e1e;
+  color: white;
+  border: 1px solid #444;
+  border-radius: 6px;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #999;
+}
+
+.task-card {
+  background: #1e1e1e;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.4);
+}
+
+.task-card h3 {
+  margin-top: 0;
+  color: white;
+}
+
+button {
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 8px;
+}
+
+.complete-btn {
+  background: #2ecc71;
+  color: white;
+}
+
+.edit-btn {
+  background: #3498db;
+  color: white;
+}
+
+.delete-btn {
+  background: #e74c3c;
+  color: white;
+}
+
+form button {
+  background: #2ecc71;
+  color: white;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #444;
+}
+.filter-buttons {
+  margin-bottom: 20px;
+}
+
+.filter-buttons button {
+  margin-right: 10px;
+}
+
+.filter-buttons .active {
+  background: #3498db;
+  color: white;
+}
+.stats-bar {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.stat-card {
+  flex: 1;
+  background: #1e1e1e;
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.stat-card h3 {
+  margin: 0;
+  color: #3498db;
+}
+
+.stat-card p {
+  font-size: 24px;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.empty-state {
+  text-align: center;
+  padding: 40px;
+  background: #1e1e1e;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+.empty-state h2 {
+  color: #3498db;
+}
+.overdue {
+  border-left: 5px solid #e74c3c;
+}
+.overdue-text {
+  color: #e74c3c;
+  font-weight: bold;
+}
+form {
+  margin-top: 30px;
+}
+
+form button:hover {
+  opacity: 0.9;
+}
+
+.complete-btn:hover,
+.edit-btn:hover,
+.delete-btn:hover {
+  opacity: 0.9;
+}
+
+button {
+  transition: 0.2s ease;
+}
