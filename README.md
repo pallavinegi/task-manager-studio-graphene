@@ -171,6 +171,17 @@ npm run dev
 * Dark Theme User Interface
 
 ---
+## Live Demo
+
+Frontend (Vercel):
+https://task-manager-studio-graphene-git-main-pallavi-negi.vercel.app/
+
+Backend API (Render):
+https://task-manager-studio-graphene.onrender.com/api/tasks
+
+GitHub Repository:
+https://github.com/pallavinegi/task-manager-studio-graphene
+
 
 ## Author
 
