@@ -66,10 +66,14 @@ function TaskList({ tasks, deleteTask, toggleTask, updateTask }) {
 
           <button
             className="delete-btn"
-            onClick={() => deleteTask(task.id)}
-          >
-            Delete
-          </button>
+             onClick={() => {
+             if (window.confirm("Are you sure you want to delete this task?")) {
+              deleteTask(task.id);
+    }
+  }}
+>
+  Delete
+</button>
 
           <hr />
         </div>
