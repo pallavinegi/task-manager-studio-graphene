@@ -11,7 +11,7 @@ function App() {
   const fetchTasks = async () => {
     try {
       const response = await axios.get(
-        "http://localhost:5000/api/tasks"
+        "https://task-manager-studio-graphene.onrender.com/api/tasks"
       );
 
       setTasks(response.data);
@@ -22,7 +22,7 @@ function App() {
   const deleteTask = async (id) => {
     try {
       await axios.delete(
-        `http://localhost:5000/api/tasks/${id}`
+        `https://task-manager-studio-graphene.onrender.com/api/tasks/${id}`
       );
 
       fetchTasks();
@@ -34,7 +34,7 @@ function App() {
     const toggleTask = async (id) => {
   try {
     await axios.patch(
-      `http://localhost:5000/api/tasks/${id}/toggle`
+      `https://task-manager-studio-graphene.onrender.com/api/tasks/${id}/toggle`
     );
 
     fetchTasks();
@@ -46,7 +46,7 @@ function App() {
 const updateTask = async (id, title) => {
   try {
     await axios.put(
-      `http://localhost:5000/api/tasks/${id}`,
+      `https://task-manager-studio-graphene.onrender.com/api/tasks/${id}`,
       {
         title
       }
